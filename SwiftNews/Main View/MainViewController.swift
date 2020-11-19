@@ -20,12 +20,12 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.title = "Swift News"
-        getAllNews()
+        fetchLatestNews()
     }
     
-    func getAllNews() {
+    //MARK: - Fetch all News
+    fileprivate  func fetchLatestNews() {
         if InternetConnection.isConnected(){
             self.view.showLoader()
             NetworkManager.shared.fetchAllNews(completion: { (response) in
@@ -48,6 +48,7 @@ class MainViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Passing selected news to Article View
         if let segue = segue.destination as? ArticleViewController{
             segue.selectedNews = self.selectedNews
         }
@@ -55,11 +56,14 @@ class MainViewController: UIViewController {
     
 
 }
+
 extension MainViewController: UITableViewDataSource, UITableViewDelegate{
+    // MARK: - Number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.swiftNews?.data?.children?.count ?? 0
     }
     
+    // MARK: - Cell for row at indexPath
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "nCell", for: indexPath) as! MainTableViewCell
         
@@ -70,8 +74,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
+    // MARK: - Did select row at indexPath
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedNews = self.swiftNews?.data?.children?[indexPath.row]
+        //Navigating to Article View
         self.performSegue(withIdentifier:"articleSegue", sender: self)
     }
     

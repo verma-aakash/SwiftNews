@@ -12,19 +12,24 @@ class ArticleViewController: UIViewController {
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var articleBodyLabel: UILabel!
     
+  
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.title = selectedNews?.data?.title
-        self.articleImageView.image = selectedNews?.data?.thumbnailImage
-        self.articleBodyLabel.text = selectedNews?.data?.selftext
+        InitializeArticleView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
+    // MARK: - Setting title, body and Image
+    fileprivate func InitializeArticleView() {
+        self.title = selectedNews?.data?.title
+        self.articleImageView.image = selectedNews?.data?.thumbnailImage
+        self.articleBodyLabel.text = selectedNews?.data?.selftext
+    }
 
     
     /*

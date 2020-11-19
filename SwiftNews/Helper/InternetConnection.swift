@@ -9,8 +9,7 @@ import SystemConfiguration
 import UIKit
 
 public class InternetConnection {
-    
-    
+
     private init() {
         
     }

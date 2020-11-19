@@ -17,6 +17,7 @@ class MainTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    // MARK: - Configure cell
     func configureCell(childData: ChildData)  {
         self.newsTitleLabel.text = childData.title
         self.newsImageView.image = childData.thumbnailImage
