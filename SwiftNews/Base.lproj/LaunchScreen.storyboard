@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,20 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="emv-Ms-bB1">
-                                <rect key="frame" x="107" y="349" width="200" height="197.5"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Sj-2g-fyi">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="5c1-eh-JeM"/>
-                                    <constraint firstAttribute="width" constant="200" id="pEF-FN-KKp"/>
+                                    <constraint firstAttribute="height" constant="200" id="Qfh-1y-aK3"/>
+                                    <constraint firstAttribute="width" constant="200" id="llt-7m-Lau"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="emv-Ms-bB1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZDd-Nt-pif"/>
-                            <constraint firstItem="emv-Ms-bB1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="s5L-fM-Zj3"/>
+                            <constraint firstItem="1Sj-2g-fyi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yh6-eU-3Wo"/>
+                            <constraint firstItem="1Sj-2g-fyi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ycJ-EU-8tH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,9 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="swift" catalog="system" width="128" height="106"/>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="SwiftLogo" width="379" height="341"/>
     </resources>
 </document>
