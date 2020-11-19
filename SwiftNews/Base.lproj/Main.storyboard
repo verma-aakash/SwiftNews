@@ -31,27 +31,27 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQF-j5-yxB">
                                                     <rect key="frame" x="8" y="8" width="398" height="132"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-8L-XbZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="398" height="132"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-8L-XbZ">
+                                                            <rect key="frame" x="8" y="8" width="382" height="116"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTh-QO-T5J">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xnd-GM-Ugv">
-                                                                    <rect key="frame" x="0.0" y="20.5" width="398" height="111.5"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="382" height="87.5"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.91326715530000002" green="0.91326715530000002" blue="0.91326715530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="ibN-8L-XbZ" firstAttribute="leading" secondItem="eQF-j5-yxB" secondAttribute="leading" id="2LD-8O-O4B"/>
-                                                        <constraint firstItem="ibN-8L-XbZ" firstAttribute="top" secondItem="eQF-j5-yxB" secondAttribute="top" id="c3z-Wy-oUz"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ibN-8L-XbZ" secondAttribute="trailing" id="jIg-VV-MCt"/>
-                                                        <constraint firstAttribute="bottom" secondItem="ibN-8L-XbZ" secondAttribute="bottom" id="yTh-qs-090"/>
+                                                        <constraint firstItem="ibN-8L-XbZ" firstAttribute="leading" secondItem="eQF-j5-yxB" secondAttribute="leading" constant="8" id="2LD-8O-O4B"/>
+                                                        <constraint firstItem="ibN-8L-XbZ" firstAttribute="top" secondItem="eQF-j5-yxB" secondAttribute="top" constant="8" id="c3z-Wy-oUz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ibN-8L-XbZ" secondAttribute="trailing" constant="8" id="jIg-VV-MCt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ibN-8L-XbZ" secondAttribute="bottom" constant="8" id="yTh-qs-090"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -101,14 +101,40 @@
                     <view key="view" contentMode="scaleToFill" id="cZ4-VM-Wwr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HsN-Rn-Uxh">
+                                <rect key="frame" x="10" y="140" width="394" height="722"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehQ-64-ptf">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="701.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxO-BZ-2fp">
+                                        <rect key="frame" x="0.0" y="701.5" width="394" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="h8M-4p-LHc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HsN-Rn-Uxh" firstAttribute="leading" secondItem="h8M-4p-LHc" secondAttribute="leading" constant="10" id="Blb-H8-nZl"/>
+                            <constraint firstItem="HsN-Rn-Uxh" firstAttribute="bottom" secondItem="h8M-4p-LHc" secondAttribute="bottom" id="RfX-XL-Zht"/>
+                            <constraint firstItem="HsN-Rn-Uxh" firstAttribute="trailing" secondItem="h8M-4p-LHc" secondAttribute="trailing" constant="-10" id="YyQ-j6-FZL"/>
+                            <constraint firstItem="HsN-Rn-Uxh" firstAttribute="top" secondItem="h8M-4p-LHc" secondAttribute="top" id="mln-eU-074"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NTK-Yt-2RR"/>
+                    <connections>
+                        <outlet property="articleBodyLabel" destination="WxO-BZ-2fp" id="nV8-A6-qIq"/>
+                        <outlet property="articleImageView" destination="ehQ-64-ptf" id="RkQ-oM-2px"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3W-Xt-KhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="75"/>
+            <point key="canvasLocation" x="1695.6521739130435" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dwk-uh-nQI">

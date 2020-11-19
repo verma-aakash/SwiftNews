@@ -9,20 +9,23 @@ import UIKit
 
 class ArticleViewController: UIViewController {
     var selectedNews: Child?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
+    @IBOutlet weak var articleImageView: UIImageView!
+    @IBOutlet weak var articleBodyLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.title = selectedNews?.data?.title
-        print(selectedNews?.data?.title)
+        self.articleImageView.image = selectedNews?.data?.thumbnailImage
+        self.articleBodyLabel.text = selectedNews?.data?.selftext
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    
+
     
     /*
     // MARK: - Navigation
