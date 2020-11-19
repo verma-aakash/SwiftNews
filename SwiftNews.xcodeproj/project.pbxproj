@@ -27,6 +27,8 @@
 		F20DDD4B2566BC8C008381B9 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDD4A2566BC8C008381B9 /* NewsData.swift */; };
 		F20DDD4E2566BC9C008381B9 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDD4D2566BC9C008381B9 /* Child.swift */; };
 		F20DDD512566BCAC008381B9 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDD502566BCAC008381B9 /* Preview.swift */; };
+		F20DDD542566C36B008381B9 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDD532566C36B008381B9 /* MainTableViewCell.swift */; };
+		F20DDD572566C608008381B9 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DDD562566C608008381B9 /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		F20DDD4A2566BC8C008381B9 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		F20DDD4D2566BC9C008381B9 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		F20DDD502566BCAC008381B9 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		F20DDD532566C36B008381B9 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		F20DDD562566C608008381B9 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F20DDD212566BAA0008381B9 /* MainViewController.swift */,
+				F20DDD532566C36B008381B9 /* MainTableViewCell.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		F20DDD272566BACD008381B9 /* Article View */ = {
 			isa = PBXGroup;
 			children = (
+				F20DDD562566C608008381B9 /* ArticleViewController.swift */,
 			);
 			path = "Article View";
 			sourceTree = "<group>";
@@ -229,9 +235,11 @@
 				F20DDD512566BCAC008381B9 /* Preview.swift in Sources */,
 				F20DDD292566BB11008381B9 /* Loader.swift in Sources */,
 				F20DDD362566BB8B008381B9 /* NetworkManager.swift in Sources */,
+				F20DDD542566C36B008381B9 /* MainTableViewCell.swift in Sources */,
 				F20DDD332566BB6F008381B9 /* Constants.swift in Sources */,
 				F20DDD4E2566BC9C008381B9 /* Child.swift in Sources */,
 				F20DDD2D2566BB33008381B9 /* Alert.swift in Sources */,
+				F20DDD572566C608008381B9 /* ArticleViewController.swift in Sources */,
 				F20DDD3F2566BC2A008381B9 /* Variants.swift in Sources */,
 				F20DDD052566B7BC008381B9 /* AppDelegate.swift in Sources */,
 				F20DDD452566BC4F008381B9 /* Source.swift in Sources */,
